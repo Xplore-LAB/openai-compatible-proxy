@@ -1,0 +1,55 @@
+<svg width="1280" height="640" viewBox="0 0 1280 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="146" y1="76" x2="1104" y2="564" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07111F"/>
+      <stop offset="0.55" stop-color="#0B2A54"/>
+      <stop offset="1" stop-color="#0B5FFF"/>
+    </linearGradient>
+    <linearGradient id="card" x1="300" y1="152" x2="1000" y2="488" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#111827" stop-opacity="0.72"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="358" y1="182" x2="874" y2="445" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7DD3FC"/>
+      <stop offset="1" stop-color="#34D399"/>
+    </linearGradient>
+    <filter id="blur" x="0" y="0" width="1280" height="640" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+  </defs>
+  <rect width="1280" height="640" rx="40" fill="url(#bg)"/>
+  <g opacity="0.42" filter="url(#blur)">
+    <circle cx="238" cy="124" r="100" fill="#34D399"/>
+    <circle cx="1066" cy="136" r="114" fill="#38BDF8"/>
+    <circle cx="1038" cy="520" r="120" fill="#0EA5E9"/>
+  </g>
+  <rect x="108" y="116" width="1064" height="408" rx="32" fill="url(#card)" stroke="rgba(255,255,255,0.12)"/>
+  <text x="164" y="202" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700">OpenAI-Compatible API Proxy</text>
+  <text x="164" y="248" fill="#C7D2FE" font-family="Arial, Helvetica, sans-serif" font-size="24">Bridge any upstream LLM endpoint into an OpenAI-style /v1 API.</text>
+
+  <rect x="164" y="300" width="178" height="68" rx="20" fill="#0B1324" stroke="#2DD4BF" stroke-opacity="0.7"/>
+  <text x="194" y="342" fill="#E5F9FF" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">SDKs / Apps</text>
+  <text x="190" y="398" fill="#A5B4FC" font-family="Arial, Helvetica, sans-serif" font-size="18">OpenAI SDK</text>
+  <text x="190" y="424" fill="#A5B4FC" font-family="Arial, Helvetica, sans-serif" font-size="18">Dify / Open WebUI</text>
+
+  <rect x="430" y="268" width="420" height="124" rx="28" fill="#08192E" stroke="url(#accent)" stroke-width="2"/>
+  <text x="482" y="322" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">Compatibility Proxy</text>
+  <text x="482" y="360" fill="#BFDBFE" font-family="Arial, Helvetica, sans-serif" font-size="20">Stable OpenAI-style API surface, flexible upstream routing</text>
+
+  <rect x="938" y="300" width="178" height="68" rx="20" fill="#0B1324" stroke="#38BDF8" stroke-opacity="0.7"/>
+  <text x="964" y="342" fill="#E5F9FF" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Upstream LLMs</text>
+  <text x="962" y="398" fill="#A5B4FC" font-family="Arial, Helvetica, sans-serif" font-size="18">Vendor APIs</text>
+  <text x="962" y="424" fill="#A5B4FC" font-family="Arial, Helvetica, sans-serif" font-size="18">Private gateways</text>
+
+  <path d="M350 334H414" stroke="url(#accent)" stroke-width="10" stroke-linecap="round"/>
+  <path d="M394 316L430 334L394 352" stroke="url(#accent)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M852 334H916" stroke="url(#accent)" stroke-width="10" stroke-linecap="round"/>
+  <path d="M896 316L932 334L896 352" stroke="url(#accent)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <text x="165" y="486" fill="#D1FAE5" font-family="Arial, Helvetica, sans-serif" font-size="18">OpenAI-compatible</text>
+  <text x="360" y="486" fill="#D1FAE5" font-family="Arial, Helvetica, sans-serif" font-size="18">Docker / systemd</text>
+  <text x="534" y="486" fill="#D1FAE5" font-family="Arial, Helvetica, sans-serif" font-size="18">FastAPI</text>
+  <text x="652" y="486" fill="#D1FAE5" font-family="Arial, Helvetica, sans-serif" font-size="18">Cherry Studio</text>
+  <text x="848" y="486" fill="#D1FAE5" font-family="Arial, Helvetica, sans-serif" font-size="18">Open WebUI</text>
+  <text x="1020" y="486" fill="#D1FAE5" font-family="Arial, Helvetica, sans-serif" font-size="18">Dify</text>
+</svg>

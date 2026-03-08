@@ -1,11 +1,15 @@
 # OpenAI-Compatible API Proxy
 
 <p align="center">
+  <img src="assets/banner.svg" alt="OpenAI-Compatible API Proxy banner" width="100%" />
+</p>
+
+<p align="center">
   <img src="assets/icon.svg" alt="OpenAI-Compatible API Proxy icon" width="120" />
 </p>
 
 <p align="center">
-  <a href="README.zh-CN.md">中文文档</a>
+  <a href="README.zh-CN.md">中文文档</a> · <a href="docs/architecture.md">Architecture</a>
 </p>
 
 ![Python](https://img.shields.io/badge/python-3.9%2B-blue)
@@ -132,6 +136,14 @@ This pattern is useful when connecting tools that already expect OpenAI-compatib
 - Open WebUI
 - Dify
 - Any app that accepts `base_url` / `api_base`
+
+## Architecture
+
+<p align="center">
+  <img src="assets/banner.svg" alt="Architecture banner" width="100%" />
+</p>
+
+See `docs/architecture.md` for the simplified request flow and positioning.
 
 ## Project Structure
 

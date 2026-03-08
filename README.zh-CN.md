@@ -1,11 +1,15 @@
 # OpenAI 兼容代理
 
 <p align="center">
+  <img src="assets/banner.svg" alt="OpenAI-Compatible API Proxy 横幅" width="100%" />
+</p>
+
+<p align="center">
   <img src="assets/icon.svg" alt="OpenAI-Compatible API Proxy 图标" width="120" />
 </p>
 
 <p align="center">
-  <a href="README.md">English Docs</a>
+  <a href="README.md">English Docs</a> · <a href="docs/architecture.md">架构说明</a>
 </p>
 
 在几分钟内，把任意大模型 API 包装成 OpenAI 兼容接口。
@@ -83,6 +87,14 @@ docker compose up -d --build
 - Open WebUI
 - Dify
 - 任何支持 `base_url` / `api_base` 的客户端
+
+## 架构说明
+
+<p align="center">
+  <img src="assets/banner.svg" alt="架构横幅" width="100%" />
+</p>
+
+可在 `docs/architecture.md` 查看简化后的请求链路和定位说明。
 
 ## 项目结构
 
