@@ -1,0 +1,53 @@
+<svg width="1280" height="640" viewBox="0 0 1280 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="76" y1="52" x2="1168" y2="588" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#050B16"/>
+      <stop offset="0.55" stop-color="#0A2447"/>
+      <stop offset="1" stop-color="#0B5FFF"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="274" y1="168" x2="1012" y2="492" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7DD3FC"/>
+      <stop offset="1" stop-color="#34D399"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="640" rx="36" fill="url(#bg)"/>
+  <circle cx="202" cy="126" r="112" fill="#34D399" fill-opacity="0.18"/>
+  <circle cx="1088" cy="126" r="120" fill="#38BDF8" fill-opacity="0.18"/>
+  <circle cx="1086" cy="548" r="128" fill="#60A5FA" fill-opacity="0.14"/>
+
+  <rect x="86" y="88" width="1108" height="464" rx="30" fill="#081221" fill-opacity="0.72" stroke="#FFFFFF" stroke-opacity="0.1"/>
+
+  <rect x="126" y="130" width="96" height="96" rx="28" fill="#0A1630" stroke="url(#glow)" stroke-width="2"/>
+  <path d="M152 170C152 159.507 160.507 151 171 151H194C216.091 151 234 168.909 234 191C234 213.091 216.091 231 194 231H182V258C182 268.493 173.493 277 163 277C152.507 277 144 268.493 144 258V178C144 167.507 152.507 159 163 159H152V170Z" fill="white" fill-opacity="0.96" transform="translate(0 -18) scale(0.8) translate(30 32)"/>
+  <path d="M197 173L226 202M226 202L197 231M226 202H151" stroke="url(#glow)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" transform="translate(0 -10) scale(0.8) translate(35 38)"/>
+
+  <text x="254" y="174" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">OpenAI-Compatible API Proxy</text>
+  <text x="254" y="214" fill="#BFDBFE" font-family="Arial, Helvetica, sans-serif" font-size="18">Turn any LLM API into an OpenAI-compatible endpoint.</text>
+
+  <text x="126" y="310" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="700">One stable /v1 API</text>
+  <text x="126" y="372" fill="#D1D5DB" font-family="Arial, Helvetica, sans-serif" font-size="28">Keep your apps, SDKs, and workflows unchanged while switching the upstream model.</text>
+
+  <rect x="126" y="430" width="210" height="52" rx="16" fill="#0C1B33" stroke="#2DD4BF" stroke-opacity="0.8"/>
+  <text x="152" y="463" fill="#E6FFFB" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">OpenAI-compatible</text>
+  <rect x="356" y="430" width="152" height="52" rx="16" fill="#0C1B33" stroke="#38BDF8" stroke-opacity="0.8"/>
+  <text x="391" y="463" fill="#E6FFFB" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">FastAPI</text>
+  <rect x="528" y="430" width="146" height="52" rx="16" fill="#0C1B33" stroke="#A78BFA" stroke-opacity="0.4"/>
+  <text x="558" y="463" fill="#E6FFFB" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">Docker</text>
+
+  <rect x="770" y="174" width="300" height="86" rx="20" fill="#09172B" stroke="#34D399" stroke-opacity="0.6"/>
+  <text x="800" y="210" fill="#E5F9FF" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">Clients / Apps</text>
+  <text x="800" y="244" fill="#A5B4FC" font-family="Arial, Helvetica, sans-serif" font-size="18">OpenAI SDK · Dify · Open WebUI</text>
+
+  <rect x="734" y="312" width="372" height="98" rx="24" fill="#07192E" stroke="url(#glow)" stroke-width="2"/>
+  <text x="792" y="352" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">Compatibility Proxy</text>
+  <text x="792" y="386" fill="#BFDBFE" font-family="Arial, Helvetica, sans-serif" font-size="18">Routing · model list · stable API surface</text>
+
+  <rect x="770" y="462" width="300" height="86" rx="20" fill="#09172B" stroke="#38BDF8" stroke-opacity="0.6"/>
+  <text x="808" y="498" fill="#E5F9FF" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">Upstream LLMs</text>
+  <text x="808" y="532" fill="#A5B4FC" font-family="Arial, Helvetica, sans-serif" font-size="18">Vendor APIs · private gateways</text>
+
+  <path d="M918 260V306" stroke="url(#glow)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M900 289L918 307L936 289" stroke="url(#glow)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M918 410V456" stroke="url(#glow)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M900 439L918 457L936 439" stroke="url(#glow)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

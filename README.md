@@ -1,6 +1,10 @@
 # OpenAI-Compatible API Proxy
 
 <p align="center">
+  <img src="assets/social-preview.svg" alt="OpenAI-Compatible API Proxy social preview" width="100%" />
+</p>
+
+<p align="center">
   <img src="assets/banner.svg" alt="OpenAI-Compatible API Proxy banner" width="100%" />
 </p>
 
