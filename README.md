@@ -1,16 +1,10 @@
 # OpenAI-Compatible API Proxy
 
 <p align="center">
-  <img src="assets/social-preview.svg" alt="OpenAI-Compatible API Proxy social preview" width="100%" />
+  <img src="assets/icon.svg" alt="OpenAI-Compatible API Proxy icon" width="112" />
 </p>
 
-<p align="center">
-  <img src="assets/banner.svg" alt="OpenAI-Compatible API Proxy banner" width="100%" />
-</p>
-
-<p align="center">
-  <img src="assets/icon.svg" alt="OpenAI-Compatible API Proxy icon" width="120" />
-</p>
+<p align="center"><strong>Turn any LLM API into an OpenAI-compatible endpoint in minutes.</strong></p>
 
 <p align="center">
   <a href="README.zh-CN.md">中文文档</a> · <a href="docs/architecture.md">Architecture</a>
@@ -20,8 +14,6 @@
 ![FastAPI](https://img.shields.io/badge/fastapi-ready-009688)
 ![OpenAI Compatible](https://img.shields.io/badge/api-openai--compatible-black)
 ![Deploy](https://img.shields.io/badge/deploy-docker%20%7C%20systemd-orange)
-
-Turn any LLM API into an OpenAI-compatible endpoint in minutes.
 
 A lightweight compatibility proxy that wraps your upstream model endpoint behind an OpenAI-style `/v1/*` API, so existing SDKs, clients, and workflows can connect with minimal changes.
 
