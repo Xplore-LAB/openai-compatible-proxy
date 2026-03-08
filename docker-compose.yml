@@ -1,0 +1,9 @@
+services:
+  openai-compatible-proxy:
+    build: .
+    container_name: openai-compatible-proxy
+    restart: unless-stopped
+    ports:
+      - "9000:9000"
+    env_file:
+      - .env
