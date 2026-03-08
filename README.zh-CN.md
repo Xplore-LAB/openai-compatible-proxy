@@ -1,5 +1,13 @@
 # OpenAI 兼容代理
 
+<p align="center">
+  <img src="assets/icon.svg" alt="OpenAI-Compatible API Proxy 图标" width="120" />
+</p>
+
+<p align="center">
+  <a href="README.md">English Docs</a>
+</p>
+
 在几分钟内，把任意大模型 API 包装成 OpenAI 兼容接口。
 
 这是一个轻量代理层，用来把上游模型接口统一暴露为 OpenAI 风格的 `/v1/*` API，方便现有 SDK、客户端和工作流系统快速接入。
@@ -13,7 +21,7 @@
 - 不重写现有客户端
 - 不改造现有 OpenAI 集成链路
 - 用一层轻代理完成模型接入兼容
-- 方便后续做切换、治理、控成本
+- 方便后续做切换、治理和控成本
 
 ## 功能
 
@@ -23,6 +31,13 @@
 - 可选强制 `chat/completions` 使用 `stream=true`
 - 支持环境变量配置
 - 自带 Docker、Compose、systemd 和使用示例
+
+## 最适合什么场景
+
+- 把私有模型或第三方模型包装成 OpenAI 风格 API
+- 沿用现有 OpenAI SDK，不重写客户端代码
+- 让 Open WebUI、Dify、Cherry Studio 等工具直接接入
+- 作为内部 AI 网关的轻量兼容层
 
 ## 快速启动
 
@@ -69,8 +84,32 @@ docker compose up -d --build
 - Dify
 - 任何支持 `base_url` / `api_base` 的客户端
 
+## 项目结构
+
+```text
+.
+├── assets/
+│   └── icon.svg
+├── proxy.py
+├── requirements.txt
+├── .env.example
+├── Dockerfile
+├── docker-compose.yml
+├── docs/
+│   ├── compatibility.md
+│   ├── deployment.md
+│   ├── faq.md
+│   └── troubleshooting.md
+└── examples/
+    ├── python-openai-sdk/
+    ├── cherry-studio/
+    ├── open-webui/
+    └── dify/
+```
+
 ## 文档
 
+- `README.md`
 - `docs/compatibility.md`
 - `docs/deployment.md`
 - `docs/faq.md`
@@ -82,6 +121,13 @@ docker compose up -d --build
 - 给多个内部工具提供稳定的模型出口
 - 在不改客户端的情况下切换模型供应商
 - 做私有部署、统一网关或模型中转
+
+## 谁适合用
+
+- 已经依赖 OpenAI SDK 的开发者
+- 想摆脱单一模型供应商绑定的团队
+- 想先上兼容层、后面再演进到完整 AI 网关的项目
+- 需要给工具、自动化和内部平台提供稳定 API 的团队
 
 ## 路线图
 

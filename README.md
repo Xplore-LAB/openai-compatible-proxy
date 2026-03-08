@@ -1,5 +1,13 @@
 # OpenAI-Compatible API Proxy
 
+<p align="center">
+  <img src="assets/icon.svg" alt="OpenAI-Compatible API Proxy icon" width="120" />
+</p>
+
+<p align="center">
+  <a href="README.zh-CN.md">中文文档</a>
+</p>
+
 ![Python](https://img.shields.io/badge/python-3.9%2B-blue)
 ![FastAPI](https://img.shields.io/badge/fastapi-ready-009688)
 ![OpenAI Compatible](https://img.shields.io/badge/api-openai--compatible-black)
@@ -7,18 +15,18 @@
 
 Turn any LLM API into an OpenAI-compatible endpoint in minutes.
 
-一个轻量代理层，把上游模型接口包装成 OpenAI 兼容的 `/v1/*` API，方便现有 SDK、客户端和工作流工具快速接入。
+A lightweight compatibility proxy that wraps your upstream model endpoint behind an OpenAI-style `/v1/*` API, so existing SDKs, clients, and workflows can connect with minimal changes.
 
 ## Why This Exists
 
-很多工具已经围绕 OpenAI API 建好了接入能力，但你的真实上游可能不是 OpenAI 本身。
+A lot of AI apps already know how to talk to the OpenAI API. The real problem is not calling a model - it is preserving compatibility across SDKs, tools, deployments, and vendor changes.
 
-这个项目的目标很简单：
+This project helps you:
 
-- 保留 OpenAI 风格接口
-- 降低客户端改造成本
-- 让现有 OpenAI 生态快速接上你的模型
-- 方便在私有部署、模型切换、成本控制之间做平衡
+- keep an OpenAI-style API surface
+- reduce downstream migration cost
+- plug existing tools into a different upstream
+- keep flexibility for private deployment, routing, and cost control
 
 ## Features
 
@@ -35,12 +43,6 @@ Turn any LLM API into an OpenAI-compatible endpoint in minutes.
 - Reusing existing OpenAI SDK integrations without rewriting client code
 - Connecting tools like Open WebUI, Dify, Cherry Studio, or internal apps
 - Building an internal AI gateway with minimal moving parts
-
-## Why Not Just Call The Upstream Directly?
-
-Because the real integration cost is rarely the model call itself.
-It is everything around it: SDK compatibility, existing tools, deployment defaults, and migration friction.
-This proxy keeps your downstream apps stable while letting you change the upstream whenever you need.
 
 ## Quick Start
 
@@ -135,6 +137,8 @@ This pattern is useful when connecting tools that already expect OpenAI-compatib
 
 ```text
 .
+├── assets/
+│   └── icon.svg
 ├── proxy.py
 ├── requirements.txt
 ├── .env.example
@@ -158,6 +162,7 @@ This pattern is useful when connecting tools that already expect OpenAI-compatib
 - `docs/deployment.md`
 - `docs/faq.md`
 - `docs/troubleshooting.md`
+- `README.zh-CN.md`
 
 ## Use Cases
 
