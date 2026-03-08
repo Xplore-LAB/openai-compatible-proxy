@@ -1,5 +1,10 @@
 # OpenAI-Compatible API Proxy
 
+![Python](https://img.shields.io/badge/python-3.9%2B-blue)
+![FastAPI](https://img.shields.io/badge/fastapi-ready-009688)
+![OpenAI Compatible](https://img.shields.io/badge/api-openai--compatible-black)
+![Deploy](https://img.shields.io/badge/deploy-docker%20%7C%20systemd-orange)
+
 Turn any LLM API into an OpenAI-compatible endpoint in minutes.
 
 一个轻量代理层，把上游模型接口包装成 OpenAI 兼容的 `/v1/*` API，方便现有 SDK、客户端和工作流工具快速接入。
@@ -23,6 +28,19 @@ Turn any LLM API into an OpenAI-compatible endpoint in minutes.
 - Optionally forces `stream=true` for `chat/completions`
 - Supports environment-based configuration
 - Includes Docker, Compose, systemd, and usage examples
+
+## Best For
+
+- Wrapping a private or third-party LLM endpoint behind an OpenAI-style API
+- Reusing existing OpenAI SDK integrations without rewriting client code
+- Connecting tools like Open WebUI, Dify, Cherry Studio, or internal apps
+- Building an internal AI gateway with minimal moving parts
+
+## Why Not Just Call The Upstream Directly?
+
+Because the real integration cost is rarely the model call itself.
+It is everything around it: SDK compatibility, existing tools, deployment defaults, and migration friction.
+This proxy keeps your downstream apps stable while letting you change the upstream whenever you need.
 
 ## Quick Start
 
@@ -147,6 +165,13 @@ This pattern is useful when connecting tools that already expect OpenAI-compatib
 - Switch model vendors without changing downstream clients
 - Add a thin compatibility layer for internal AI tools
 - Provide one stable endpoint to multiple teams or apps
+
+## Who Should Use This
+
+- Developers who already rely on OpenAI SDKs
+- Teams migrating away from a single model vendor
+- Builders who want a simple compatibility layer before adopting a full AI gateway
+- Anyone who needs a stable API surface for tools, automations, or internal platforms
 
 ## Roadmap
 
